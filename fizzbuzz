@@ -10,4 +10,4 @@ raise 'A limit (number) must be specified.' unless limit.positive?
 
 # Generate FizzBuzz
 require_relative 'lib/fizzbuzz.rb'
-puts FizzBuzz.process_range 0, limit
+puts FizzBuzz.process_range 1, limit
