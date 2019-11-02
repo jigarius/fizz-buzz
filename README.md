@@ -1,5 +1,7 @@
 # Fizz Buzz
 
+[![Build Status](https://travis-ci.org/jigarius/fizz-buzz.svg?branch=ruby%2F2.x)](https://travis-ci.org/jigarius/fizz-buzz)
+
 A small, neat and clean command-line application to demonstrate Ruby syntax to
 people who've never seen Ruby code before. It also demonstrates simple writing
 simple tests with `rspec`.
