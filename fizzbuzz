@@ -12,6 +12,6 @@ raise 'A limit (number) must be specified.' unless limit.positive?
 
 # Generate FizzBuzz
 output = FizzBuzz.process_range 1, limit
-puts output.join("\n")
+puts output.join("\n") + "\n"
 
 exit 0
