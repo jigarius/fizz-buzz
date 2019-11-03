@@ -29,22 +29,22 @@ describe FizzBuzz do
 
   it 'returns fizzbuzz for 1 to 15' do
     output = FizzBuzz.process_range 1, 15
-    expect(output).to eq <<-EOT
-1
-2
-fizz
-4
-buzz
-fizz
-7
-8
-fizz
-buzz
-11
-fizz
-13
-14
-fizzbuzz
-EOT
+    expect(output).to eq [
+      1,
+      2,
+      "fizz",
+      4,
+      "buzz",
+      "fizz",
+      7,
+      8,
+      "fizz",
+      "buzz",
+      11,
+      "fizz",
+      13,
+      14,
+      "fizzbuzz"
+    ]
   end
 end
