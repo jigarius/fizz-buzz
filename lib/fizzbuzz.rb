@@ -13,11 +13,17 @@ class FizzBuzz
   end
 
   ##
+  # Returns fizz buzz for an array of numbers.
+  def self.process_array(array)
+
+  end
+
+  ##
   # Return fizz buzz for a range of numbers.
   def self.process_range(from, till)
-    output = ''
+    output = []
     from.upto(till) do |i|
-      output += process_number(i).to_s + "\n"
+      output << process_number(i).to_s
     end
     output
   end

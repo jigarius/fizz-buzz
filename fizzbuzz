@@ -4,10 +4,14 @@
 ##
 # FizzBuzz entry point.
 
+require_relative 'lib/fizzbuzz.rb'
+
 # Limit must be defined.
 limit = ARGV.first.to_i
 raise 'A limit (number) must be specified.' unless limit.positive?
 
 # Generate FizzBuzz
-require_relative 'lib/fizzbuzz.rb'
-puts FizzBuzz.process_range 1, limit
+output = FizzBuzz.process_range 1, limit
+puts output.join("\n")
+
+exit 0
