@@ -13,12 +13,6 @@ class FizzBuzz
   end
 
   ##
-  # Returns fizz buzz for an array of numbers.
-  def self.process_array(array)
-
-  end
-
-  ##
   # Return fizz buzz for a range of numbers.
   def self.process_range(from, till)
     output = []

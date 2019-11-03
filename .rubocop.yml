@@ -1,0 +1,4 @@
+# Rubocop settings.
+Metrics/BlockLength:
+  Exclude:
+    - spec/*
