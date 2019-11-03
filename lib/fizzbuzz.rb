@@ -23,7 +23,7 @@ class FizzBuzz
   def self.process_range(from, till)
     output = []
     from.upto(till) do |i|
-      output << process_number(i).to_s
+      output << process_number(i)
     end
     output
   end
