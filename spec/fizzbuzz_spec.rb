@@ -21,30 +21,30 @@ describe FizzBuzz do
     end
   end
 
-  it 'returns the number when not divisble by 3 or 5' do
+  it 'returns the number when not divisible by 3 or 5' do
     [2, 13, 1001].each do |n|
-      expect(FizzBuzz.process_number(n)).to eq n
+      expect(FizzBuzz.process_number(n)).to eq n.to_s
     end
   end
 
   it 'returns fizzbuzz for 1 to 15' do
     output = FizzBuzz.process_range 1, 15
-    expect(output).to eq [
-      1,
-      2,
-      'fizz',
-      4,
-      'buzz',
-      'fizz',
-      7,
-      8,
-      'fizz',
-      'buzz',
-      11,
-      'fizz',
-      13,
-      14,
-      'fizzbuzz'
+    expect(output).to eq %w[
+      1
+      2
+      fizz
+      4
+      buzz
+      fizz
+      7
+      8
+      fizz
+      buzz
+      11
+      fizz
+      13
+      14
+      fizzbuzz
     ]
   end
 end

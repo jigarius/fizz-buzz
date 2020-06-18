@@ -1,15 +1,14 @@
 # frozen_string_literal: true
 
+require 'fizzbuzz/number'
+
 ##
 # FizzBuzz.
-class FizzBuzz
+module FizzBuzz
   ##
   # Return fizz buzz for a number.
   def self.process_number(number)
-    output = ''
-    output += 'fizz' if (number % 3).zero?
-    output += 'buzz' if (number % 5).zero?
-    output.length.positive? ? output : number
+    FizzBuzz::Number.new(number).to_s
   end
 
   ##
