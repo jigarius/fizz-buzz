@@ -7,16 +7,16 @@ require 'fizzbuzz/number'
 module FizzBuzz
   ##
   # Return fizz buzz for a number.
-  def self.process_number(number)
+  def self.number(number)
     FizzBuzz::Number.new(number).to_s
   end
 
   ##
   # Return fizz buzz for a range of numbers.
-  def self.process_range(from, till)
+  def self.range(from, till)
     output = []
     from.upto(till) do |i|
-      output << process_number(i)
+      output << number(i)
     end
     output
   end
