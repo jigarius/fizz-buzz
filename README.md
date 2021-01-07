@@ -1,7 +1,5 @@
 # Fizz Buzz
 
-[![Build Status](https://travis-ci.org/jigarius/fizz-buzz.svg?branch=ruby%2F2.x)](https://travis-ci.org/jigarius/fizz-buzz)
-
 A small, neat and clean command-line application to demonstrate Ruby syntax to
 people who've never seen Ruby code before. It also demonstrates simple writing
 simple tests with `rspec`.
@@ -16,6 +14,6 @@ three with the word *fizz*, and any number divisible by five with the word
 ## Usage
 
 * Clone the repository.
-* Add `execute` permissions to the `fizzbuzz` file in the root of the project;
+* Add exec permissions to the `fizzbuzz` file;
   `chmod +x ./fizzbuzz`.
 * Run the `fizzbuzz` file with a numeric argument; `./fizzbuzz 15`
