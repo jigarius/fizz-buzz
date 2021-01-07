@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require 'fizzbuzz/number'
+require_relative 'fizzbuzz/number'
 
 ##
 # FizzBuzz.
