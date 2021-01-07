@@ -1,13 +1,26 @@
 name: fizz-buzz-ruby
 services:
-  app:
-    type: ruby:2.5
-    command: tail -f /dev/null
+  main:
+    type: compose
+    services:
+      image: ruby:2.7
+      command: tail -f /dev/null
     build:
-      - gem install bundle
-      - bundle install
+      - bundle install --gemfile=/app/Gemfile
+      - chmod +x /app/fizzbuzz
 tooling:
+  fizzbuzz:
+    service: main
+    cmd: /app/fizzbuzz
+  bundle:
+    service: main
+    cmd: bundle
+    dir: /app
+  rubocop:
+    service: main
+    cmd: bundle exec rubocop
+    dir: /app
   rspec:
-    service: app
-    description: Executes rspec to run tests.
-    cmd: 'rspec'
+    service: main
+    cmd: bundle exec rspec
+    dir: /app
