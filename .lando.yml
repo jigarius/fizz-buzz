@@ -7,15 +7,11 @@ services:
       command: tail -f /dev/null
     build:
       - bundle install --gemfile=/app/Gemfile
-      - chmod +x /app/fizzbuzz
+      - chmod +x /app/bin/fizzbuzz
 tooling:
   fizzbuzz:
     service: main
-    cmd: /app/fizzbuzz.rb
-  bundle:
-    service: main
-    cmd: bundle
-    dir: /app
+    cmd: /app/bin/fizzbuzz
   lint:
     service: main
     cmd: bundle exec rubocop

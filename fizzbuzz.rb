@@ -8,7 +8,10 @@ require_relative 'lib/fizzbuzz'
 
 # Limit must be defined.
 limit = ARGV.first.to_i
-raise 'A limit (number) must be specified.' unless limit.positive?
+unless limit.positive?
+  puts 'A limit (number) must be specified.'
+  exit 1
+end
 
 # Generate FizzBuzz
 output = FizzBuzz.generate limit

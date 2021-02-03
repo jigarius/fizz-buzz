@@ -35,9 +35,9 @@ fizzbuzz
 ## Usage
 
 * Clone the repository.
-* Add exec permissions to the `fizzbuzz.rb` file;
-  `chmod +x ./fizzbuzz.rb`.
-* Run it with a numeric argument; `./fizzbuzz.rb 15`
+* Add exec permissions to the `bin/fizzbuzz` file;
+  `chmod +x ./bin/fizzbuzz`.
+* Run it with a numeric argument; `./bin/fizzbuzz 15`
 
 ### Lando
 
