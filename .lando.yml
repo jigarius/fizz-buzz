@@ -11,7 +11,7 @@ services:
 tooling:
   fizzbuzz:
     service: main
-    cmd: /app/fizzbuzz
+    cmd: /app/fizzbuzz.rb
   bundle:
     service: main
     cmd: bundle
