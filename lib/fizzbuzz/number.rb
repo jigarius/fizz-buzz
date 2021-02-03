@@ -8,8 +8,8 @@ module FizzBuzz
     attr_reader :number
 
     def initialize(number)
-      unless number.is_a? Integer
-        raise ArgumentError, 'Number must be an integer'
+      unless number.is_a?(Integer) && !number.negative?
+        raise ArgumentError, 'Number must be a positive integer'
       end
 
       @number = number
