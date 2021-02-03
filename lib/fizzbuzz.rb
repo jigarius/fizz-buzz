@@ -6,18 +6,8 @@ require_relative 'fizzbuzz/number'
 # FizzBuzz.
 module FizzBuzz
   ##
-  # Return fizz buzz for a number.
-  def self.number(number)
-    FizzBuzz::Number.new(number).to_s
-  end
-
-  ##
-  # Return fizz buzz for a range of numbers.
-  def self.range(from, till)
-    output = []
-    from.upto(till) do |i|
-      output << number(i)
-    end
-    output
+  # Return fizz buzz for a 1 to 'limit'.
+  def self.generate(limit)
+    1.upto(limit).map { |i| FizzBuzz::Number.new(i).to_s }
   end
 end
