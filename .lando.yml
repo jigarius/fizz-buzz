@@ -16,11 +16,11 @@ tooling:
     service: main
     cmd: bundle
     dir: /app
-  rubocop:
+  lint:
     service: main
     cmd: bundle exec rubocop
     dir: /app
-  rspec:
+  test:
     service: main
     cmd: bundle exec rspec
     dir: /app
