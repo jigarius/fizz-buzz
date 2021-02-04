@@ -8,7 +8,7 @@ module FizzBuzz
     attr_reader :number
 
     def initialize(number)
-      unless number.is_a?(Integer) && !number.negative?
+      unless number.is_a?(Integer) && number.positive?
         raise ArgumentError, 'Number must be a positive integer'
       end
 
@@ -21,6 +21,10 @@ module FizzBuzz
 
     def buzz?
       (@number % 5).zero?
+    end
+
+    def fizzbuzz?
+      fizz? && buzz?
     end
 
     def to_s

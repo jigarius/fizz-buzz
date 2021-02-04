@@ -18,7 +18,7 @@ describe FizzBuzz::Number do
   end
 
   it 'returns fizzbuzz when number is divisible by both 3 and 5' do
-    [0, 15, 30, 225].each do |n|
+    [15, 30, 225].each do |n|
       fbn = FizzBuzz::Number.new(n)
       expect(fbn.to_s).to eq 'fizzbuzz'
     end
@@ -32,7 +32,7 @@ describe FizzBuzz::Number do
   end
 
   it 'raises ArgumentError when for invalid values' do
-    [19.5, '19', -15].each do |n|
+    [0, 19.5, '19', -15].each do |n|
       expect { FizzBuzz::Number.new(n) }.to raise_error(ArgumentError)
     end
   end
